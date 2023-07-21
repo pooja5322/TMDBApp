@@ -22,6 +22,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = DataBindingUtil.setContentView(this, R.layout.activity_home)
         supportActionBar?.hide()
+
         binding.serachmovie.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 query?.let {
